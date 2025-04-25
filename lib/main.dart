@@ -20,8 +20,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int? selectedIndex; // لتحديد أي زر تم الضغط عليه
-  int _selectedBottomIndex = 0; // متغير لحفظ فهرس العنصر في BottomNavigationBar
+  int? selectedIndex; 
+  int _selectedBottomIndex = 0; // BottomNavigationBar
 
   final List<Map<String, dynamic>> items = [
     {'title': 'Buying', 'icon': Icons.shopping_cart},
@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100], // لون الخلفية الخفيف
+      backgroundColor: Colors.grey[100], 
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
